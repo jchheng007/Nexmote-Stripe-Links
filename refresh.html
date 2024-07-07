@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Refresh Required</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .logo {
+            max-width: 200px; /* Adjust size as needed */
+            margin-bottom: 20px; /* Optional margin for spacing */
+        }
+        .dots {
+            font-size: 400px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #6772E5;
+            color: white;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #161916;
+        }
+        .horizontal-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px; /* Space between elements */
+        }
+        .circle {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="horizontal-container">
+            <img src="logo.png" alt="Logo 1" class="logo"> <!-- Replace with your first logo file path -->
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <img src="stripeLogo.png" alt="Logo 2" class="logo"> <!-- Replace with your second logo file path -->
+        </div> <!-- Replace "logo.png" with your logo file path -->
+        <h1>Session Refresh Required</h1>
+        <p>Your session needs to be refreshed.</p>
+        <!-- Button to go back to the app using URL scheme -->
+        <a href="nexmoteWasher://refresh" class="button">Return to App</a>
+    </div>
+</body>
+</html>
